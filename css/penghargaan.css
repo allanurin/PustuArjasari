@@ -1,0 +1,150 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8fa; /* Warna latar belakang yang lebih terang dan netral */
+    color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('./assets/img/hero-award-bg.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3); /* Memberikan bayangan lebih halus */
+    position: relative;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); /* Menambahkan bayangan lebih tajam */
+    color: #ffd700; /* Warna emas untuk menarik perhatian */
+}
+
+/* Award Detail Section */
+.award-detail-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    background-color: #ffffff; /* Latar belakang putih cerah */
+    border-radius: 12px; /* Sudut lebih halus */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Bayangan lebih halus dan lebih besar */
+    padding: 30px;
+    background-color: #fafafa; /* Warna latar belakang yang lebih lembut */
+}
+
+.award-header {
+    margin-bottom: 30px;
+}
+
+.award-title {
+    font-size: 2.5rem;
+    color: #2c3e50; /* Warna gelap yang kuat untuk kontras */
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.award-meta {
+    font-size: 1.1rem;
+    color: #7f8c8d; /* Warna abu-abu yang lebih lembut */
+}
+
+.award-date, .award-location {
+    display: block;
+    margin-top: 5px;
+}
+
+/* Featured Image */
+.award-figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.award-image {
+    width: 100%;
+    max-width: 100%; /* Menghindari gambar lebih lebar dari kontainer */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: block; /* Membuat gambar menjadi block untuk menghindari masalah inline */
+    margin-left: auto;  /* Menjaga gambar tetap berada di tengah */
+    margin-right: auto; /* Menjaga gambar tetap berada di tengah */
+}
+
+
+.award-caption {
+    font-style: italic;
+    color: #7f8c8d; /* Menggunakan warna yang lebih netral dan lembut */
+    margin-top: 10px;
+}
+
+/* Award Content */
+.award-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-top: 20px;
+    text-align: justify; /* Menyusun teks lebih rapi */
+}
+
+.award-content p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 2.5rem; /* Ukuran font sedikit lebih kecil */
+    }
+
+    .award-title {
+        font-size: 2rem;
+    }
+
+    .award-content {
+        font-size: 1.1rem;
+    }
+}
+
+/* Small Device (Mobile) */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh; /* Mengurangi tinggi hero section pada layar kecil */
+        padding: 0 10px; /* Mengurangi padding untuk perangkat kecil */
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        color: #ffd700; /* Warna emas tetap jelas di layar kecil */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Mengurangi intensitas bayangan */
+    }
+
+    .award-detail-section {
+        padding: 20px; /* Mengurangi padding pada layar kecil */
+    }
+
+    .award-title {
+        font-size: 1.8rem;
+    }
+
+    .award-content {
+        font-size: 1rem; /* Menyesuaikan ukuran font agar lebih mudah dibaca di perangkat kecil */
+    }
+
+    .award-image {
+        max-width: 100%; /* Gambar akan lebih kecil pada layar mobile */
+    }
+}
