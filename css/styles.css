@@ -12778,7 +12778,14 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  header.masthead {
+
+    background-size: contain;
+  }
+  
 }
 
 header.masthead .masthead-content {

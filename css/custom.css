@@ -1349,23 +1349,17 @@
 }
 
 
-.news-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default: 3 kolom */
-    gap: 20px;
+.news-container{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 30px;   
-}
-
-@media screen and (max-width: 768px) {
-    .news-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
+    gap: 30px;
+    margin-top: 125px;
 }
 
 .news-item {
     display: grid;
+    width: 350px;
     margin-bottom: 20px;
     background: #fff;
     border-radius: 8px;
